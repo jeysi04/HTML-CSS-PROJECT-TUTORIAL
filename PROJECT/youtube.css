@@ -1,9 +1,10 @@
 div.thumbnail-pic{
     margin-bottom: 6px;
+    width: 100%;
 }
 
 img.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .thumbnail-5{
-    width: 300px;
+    width: 100%;
 }
 
 img.channel-pic {
@@ -16,21 +17,12 @@ input.search_bar {
     display: block;
 }
 
-img {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
-}
-
 p {
     font-family: Roboto, Arial;
 }
 
 div.vid {
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
+    width: 100%;
 }
 
 p.vid-title {
@@ -47,7 +39,6 @@ p.vid-stat, p.vid-title{
 }
 
 div.vid-channel-info {
-    display: inline-block;
     width:300px;
 }
 
@@ -61,7 +52,6 @@ p.vid-stat {
 }
 
 div.vid-info {
-    display: inline-block;
     margin-left: 10px;
     width: 200px;
 }
@@ -72,7 +62,13 @@ p.vid-author, p.vid-stat{
 }
 
 div.vid-channel {
-    display: inline-block;
-    width: 50px;
+    width: 100%;
     vertical-align: top;
+}
+
+div.grid-vid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px
 }
