@@ -66,9 +66,76 @@ div.vid-channel {
     vertical-align: top;
 }
 
+
 div.grid-vid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 20px
+}
+
+/* HEADER CSS FILES BELOW*/
+
+div.header {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+img.menu-pic {
+    height: 24px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+img.youtube-logo-pic {
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+div.left-menu-logo {
+    width: 150px;
+    align-items: center;
+    display: flex;
+}
+
+input.search_bar {
+    width: 300px;
+    border-width: 1px;
+    border-color: rgb(228, 228, 228);
+    box-shadow: inset 1px 1px 2px rgb(0,0,0, 0.15);
+}
+
+img.img-search {
+    width: 50px;
+    height: 24px;
+    border-width: 1px;
+    border-color: rgb(196, 196, 197);
+}
+
+img.img-mic {
+    height: 24px;
+    width: 32px;
+}
+
+button.mic-button {
+    border: none;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+div.middle-search {
+    display: flex;
+    flex: 1;
+    margin-left: 35px;
+    margin-right: 35px;
+    max-width: 400px;
+}
+
+div.right-notif {
+    background-color: blanchedalmond;
+    width: 150px;
 }
