@@ -9,7 +9,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body style="padding-bottom: 30px;">
+    <body>
+
 
         <div class="header">
             <div class="left-menu-logo">
@@ -23,7 +24,7 @@
 
             <div class="middle-search">
                 <input class="search_bar" type="text" placeholder="Search">
-                <button>
+                <button class="search-button">
                     <img class="img-search" src="icons\search.svg">
                 </button>
                 <button class="mic-button">
@@ -32,15 +33,64 @@
             </div>
 
             <div class="right-notif">
-                <p>right</p>
+                <button class="upload-button">
+                    <img class="img-upload" src="icons\upload.svg">
+                </button>
+                <button class="youapp-button">
+                    <img class="img-youapp" src="icons\youtube-apps.svg">
+                </button>
+                <button class="notif-button">
+                    <div class="notif-div">
+                        <img class="img-notif" src="icons\notifications.svg">
+                        <div class="notif-count">5</div>
+                    </div>
+                </button>
+                <button class="profile-button">
+                    <img class="img-profile" src="icons\my-channel.jpeg">
+                </button>
             </div>
         </div> 
+
+        <div class="sidebar">
+            <div class="icons-sidebar">
+                <div class="home-div">
+                    <img class="side-pic" src="sidebar\home.svg">
+                    <p class="side-p"> Home </p>
+                </div>
+
+                <div class="explore-div">
+                    <img class="side-pic" src="sidebar\explore.svg">
+                    <p class="side-p"> Explore </p>
+                </div>
+
+                <div class="subs-div">
+                    <img class="side-pic" src="sidebar\subscriptions.svg">
+                    <p class="side-p"> Subscriptions </p>
+                </div>
+
+                <div class="orig-div">
+                    <img class="side-pic" src="sidebar\originals.svg">
+                    <p class="side-p"> Originals </p>
+                </div>
+
+                <div class="youmus-div">
+                    <img class="side-pic" src="sidebar\youtube-music.svg">
+                    <p class="side-p"> Youtube Music </p>
+                </div>
+
+                <div class="lib-div">
+                    <img class="side-pic" src="sidebar\library.svg">
+                    <p class="side-p"> Home </p>
+                </div>
+            </div>
+        </div>
 
 
             <div class="grid-vid">
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-1" src="thumbnails\thumbnail-1.webp">
+                        <div class="video-time">14:20</div>
                     </div>
                     <div class="vid-channel-info"
                         style=" display: grid;
@@ -59,6 +109,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-2" src="thumbnails\thumbnail-2.webp">
+                        <div class="video-time">8:22</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -79,6 +130,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-3" src="thumbnails\thumbnail-3.webp">
+                        <div class="video-time">9:13</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -99,6 +151,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-4" src="thumbnails\thumbnail-4.webp">
+                        <div class="video-time">22:09</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -119,6 +172,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-5" src="thumbnails\thumbnail-5.webp">
+                        <div class="video-time">11:17</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -139,6 +193,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-1" src="thumbnails\thumbnail-1.webp">
+                        <div class="video-time">14:20</div>
                     </div>
                     <div class="vid-channel-info"
                         style=" display: grid;
@@ -157,6 +212,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-2" src="thumbnails\thumbnail-2.webp">
+                        <div class="video-time">8:22</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -177,6 +233,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-3" src="thumbnails\thumbnail-3.webp">
+                        <div class="video-time">9:13</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -197,6 +254,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-4" src="thumbnails\thumbnail-4.webp">
+                        <div class="video-time">22:09</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -217,6 +275,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-5" src="thumbnails\thumbnail-5.webp">
+                        <div class="video-time">11:17</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -237,6 +296,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-1" src="thumbnails\thumbnail-1.webp">
+                        <div class="video-time">14:20</div>
                     </div>
                     <div class="vid-channel-info"
                         style=" display: grid;
@@ -255,6 +315,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-2" src="thumbnails\thumbnail-2.webp">
+                        <div class="video-time">8:22</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -275,6 +336,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-3" src="thumbnails\thumbnail-3.webp">
+                        <div class="video-time">9:13</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -295,6 +357,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-4" src="thumbnails\thumbnail-4.webp">
+                        <div class="video-time">22:09</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -315,6 +378,7 @@
                 <div class="vid">
                     <div class="thumbnail-pic">
                         <img class="thumbnail-5" src="thumbnails\thumbnail-5.webp">
+                        <div class="video-time">11:17</div>
                     </div>
                     <div class="vid-channel-info"
                         style="
@@ -329,7 +393,7 @@
                                 <p class="vid-author"> CS Dojo </p>
                                 <p class="vid-stat"> 519K views · 5 years ago </p>
                             </div>
-                    </div>
+                        </div>
                 </div>
         </div>
     </body>

@@ -1,6 +1,14 @@
+body {
+    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-left: 85px;
+    background-color: rgb(241, 241, 241);
+}
+
 div.thumbnail-pic{
     margin-bottom: 6px;
     width: 100%;
+    position: relative;
 }
 
 img.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .thumbnail-5{
@@ -71,28 +79,39 @@ div.grid-vid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
-    row-gap: 20px
+    row-gap: 20px;
 }
 
 /* HEADER CSS FILES BELOW*/
 
 div.header {
-    height: 45px;
+    height: 37px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(212, 212, 212);
+    z-index: 100;
 }
 
 img.menu-pic {
     height: 24px;
-    margin-left: 15px;
+    margin-left: 18px;
     margin-right: 20px;
 }
 
 img.youtube-logo-pic {
     height: 20px;
-    margin-left: 2px;
+    margin-left: 15px;
     margin-right: 20px;
 }
 
@@ -103,22 +122,40 @@ div.left-menu-logo {
 }
 
 input.search_bar {
-    width: 300px;
-    border-width: 1px;
-    border-color: rgb(228, 228, 228);
-    box-shadow: inset 1px 1px 2px rgb(0,0,0, 0.15);
+    width: 0px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(229, 229, 229);
+    box-shadow: inset 0.5px 0.5px 1px rgb(0,0,0, 0.15);
+    border-radius: 2px;
+    flex: 1;
+}
+
+input.search_bar::placeholder{
+    font-family: Arial;
+    font-size: 15px;
+    padding-left: 10px;
 }
 
 img.img-search {
     width: 50px;
-    height: 24px;
+    height: 22px;
     border-width: 1px;
     border-color: rgb(196, 196, 197);
 }
 
+button.search-button {
+    margin-left: -1px;
+    border-width: 0.5px;
+    border-color: rgb(229, 229, 229);
+    box-shadow: inset 0.5px 0.5px 1px rgb(0,0,0, 0.15);
+    border-style: solid;
+    border-radius: 2px;
+}
+
 img.img-mic {
-    height: 24px;
-    width: 32px;
+    height: 22px;
+    width: 28px;
 }
 
 button.mic-button {
@@ -132,10 +169,106 @@ div.middle-search {
     flex: 1;
     margin-left: 35px;
     margin-right: 35px;
-    max-width: 400px;
+    max-width: 450px;
+    align-content: center;
+}
+
+img.img-upload, .img-youapp, .img-notif {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+}
+
+.img-profile {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+}
+
+button.upload-button, .youapp-button, .profile-button, .notif-button {
+    background-color: white;
+    border: none;
 }
 
 div.right-notif {
-    background-color: blanchedalmond;
-    width: 150px;
+    display: flex;
+    width: 190px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* SIDEBAR CSS STYLE*/
+
+div.sidebar {
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    width: 70px;
+    position: fixed;
+}
+
+div.icons-sidebar{
+    top: 27px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+img.side-pic {
+    height: 24px;
+    width: 24px;
+    margin: 0 auto;
+}
+
+p.side-p {
+    margin-top: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+
+div.home-div, .explore-div, .subs-div, .orig-div, .youmus-div, .lib-div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.video-time {
+    background-color: black;
+    color: white;
+    font-family: Roboto, Arial;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 3px;
+}
+
+div.notif-count {
+    height: 16px;
+    width: 16px;
+    background-color: red;
+    border-radius: 50px;
+    border-style: solid;
+    font-size: 12px;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+
+    position: absolute;
+    bottom: 17px;
+    left: 9px;
+}
+
+div.notif-div {
+    position: relative;
 }
