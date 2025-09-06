@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 250px;
+    font-family: Jomhuria;
+    font-weight: 400;
+    color: white;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.200);
+    width: 500px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 165px;
+}
+
+div.intro {
+    background-color:#0060AA;
+    background-image: linear-gradient(to top, white 13%,#0060AA 90%);
+    height: 770px;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 6px 3px 2px rgba(0, 0, 0, 0.200);
+}
+
+.logo {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 140px;
+}
+
+.logo-sup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logo { 
+    margin-left: 100px;
+    width: 550px;
+    z-index: 1;
+}
+
+.superman-pic {
+    height: 500px;
+    margin-top: 65px;
+}
+
+div.title-header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+}
+
+.Home {
+    margin-left: 100px;
+    margin-right: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.About {
+    margin-left: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.sdesc {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 3px rgb(0, 0, 0, 0.200);
+    font-size: 18;
+    margin-left: 5px;
+}
+
+button.start-butt {
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    width: 290px;
+    height: 73px;
+    font-family: Jomolhari;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    background-color: #508DBB;
+}
+
+.start-butt:hover {
+    opacity: 75%;
+}
